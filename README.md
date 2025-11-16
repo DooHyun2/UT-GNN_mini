@@ -1,7 +1,22 @@
 polymer-ut-gnn-baseline-lite
-This repository is a minimal UT x ML baseline to demonstrate handling 3D ultrasound-like data and reporting MAE / r /CV with a simple model.
-초소형 **증거용** 파이프라인: 3D UT-유사 볼륨 → 그래프풍 특징 → 선형 베이스라인 → **MAE / r / CV** 리포트.  
-의존성: **Python + numpy** (추가 설치 불필요)
+This repository is a minimal UT x ML baseline designed to show capability in handling 3D ultrasound-like inspection volumes, extracting graph-style features, and reporting simple baseline metrics
+(MAE/ r / CV). It is intentionally lightweight for clarity and reproducibility.
+
+Purpose
+A compact "evidence-ready" pipeline for research proposals.
+The goal is to demonstrate:
+* ability to preprocess 3D UT-like volumetric data
+* graph-style feature extraction from spatial grids
+* simple baseline modeling and evaluation
+* reproducibility with only Python + Numpy
+  This structure can be naturally extended to full GNN models or 3D-UNet pipelines after joining a laboratory.
+
+How to Run
+Verify NumPy:
+python -c "import numpy; print('numpy OK')"
+Run the baseline:
+python run_baseline.py --seed 0 --grid 28 --noise 0.10
+This generates a small synthestic 3D volume, extracts graph-like features,trains a linear baseline model, and prints MAE / r /5-fold CV metrics.
 
 Why
   연구계획서의 Evidence Box를 위한 최소 재현 파이프라인
