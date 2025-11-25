@@ -1,3 +1,6 @@
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ec31b2fb-5449-4892-94e2-5616298433bb" />
+pred_vs_true
+
 polymer-ut-gnn-baseline-lite
 This repository is a minimal UT x ML baseline designed to demonstrate the ability to:
 * handle 3D ultrasound-like inspection volumes
